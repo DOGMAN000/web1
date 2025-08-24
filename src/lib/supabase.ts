@@ -20,8 +20,6 @@ export interface Application {
   linkedin?: string;
   github?: string;
   passion_answer: string;
-  contribution_answer: string;
-  challenge_answer: string;
   created_at?: string;
   updated_at?: string;
 }

@@ -25,8 +25,6 @@ function Apply() {
       linkedin: formData.get('linkedin') as string || undefined,
       github: formData.get('github') as string || undefined,
       passion_answer: formData.get('passion') as string,
-      contribution_answer: formData.get('contribution') as string,
-      challenge_answer: formData.get('challenge') as string,
     };
 
     try {
@@ -85,7 +83,7 @@ function Apply() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 gap-16">
             {/* Application Form */}
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Application Form</h3>
@@ -231,7 +229,7 @@ function Apply() {
                   <div className="space-y-6">
                     <div>
                       <label htmlFor="passion" className="block text-sm font-medium text-gray-700 mb-2">
-                        Why are you passionate about computer science? (250 words) *
+                        Why are you passionate about computer science? (150 words) *
                       </label>
                       <textarea
                         id="passion"
@@ -241,36 +239,6 @@ function Apply() {
                         maxLength={1500}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                         placeholder="Share what drives your interest in computer science..."
-                      ></textarea>
-                    </div>
-
-                    <div>
-                      <label htmlFor="contribution" className="block text-sm font-medium text-gray-700 mb-2">
-                        Why do you want to join the CSTC cohort, and what do you hope to contribute? (250 words) *
-                      </label>
-                      <textarea
-                        id="contribution"
-                        name="contribution"
-                        rows={4}
-                        required
-                        maxLength={1500}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                        placeholder="Tell us about your goals and how you'd contribute to the community..."
-                      ></textarea>
-                    </div>
-
-                    <div>
-                      <label htmlFor="challenge" className="block text-sm font-medium text-gray-700 mb-2">
-                        Describe a challenge you've overcome. (250 words) *
-                      </label>
-                      <textarea
-                        id="challenge"
-                        name="challenge"
-                        rows={4}
-                        required
-                        maxLength={1500}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                        placeholder="Share a meaningful challenge and how you overcame it..."
                       ></textarea>
                     </div>
                   </div>

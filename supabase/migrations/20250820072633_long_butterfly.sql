@@ -12,8 +12,6 @@
       - `linkedin` (text, optional)
       - `github` (text, optional)
       - `passion_answer` (text)
-      - `contribution_answer` (text)
-      - `challenge_answer` (text)
       - `created_at` (timestamp)
       - `updated_at` (timestamp)
 
@@ -33,8 +31,6 @@ CREATE TABLE IF NOT EXISTS applications (
   linkedin text,
   github text,
   passion_answer text NOT NULL,
-  contribution_answer text NOT NULL,
-  challenge_answer text NOT NULL,
   created_at timestamptz DEFAULT now(),
   updated_at timestamptz DEFAULT now()
 );
