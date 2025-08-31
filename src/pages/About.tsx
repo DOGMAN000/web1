@@ -6,6 +6,7 @@ import accessibilityImage from "../assets/accessibility.png";
 import inclusivityImage from "../assets/inclusivity.png";
 import empowermentImage from "../assets/empowerment.png";
 import communityImage from "../assets/community.png";
+import Leadership from "../components/Leadership";
 
 function About() {
   return (
@@ -15,7 +16,7 @@ function About() {
         className="relative bg-cover bg-center py-20"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
@@ -217,6 +218,9 @@ function About() {
               Meet the dedicated individuals working to make CSTC a
               transformative experience for every member.
             </p>
+
+              <Leadership></Leadership>
+
           </div>
 
           <div className="bg-blue-100 border border-blue-200 rounded-lg p-8 text-center">
