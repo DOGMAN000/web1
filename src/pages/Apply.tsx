@@ -65,36 +65,44 @@ function Apply() {
     <div>
       {/* Hero Section */}
       <section
-  className="relative bg-cover bg-center py-32" // increased py to push content down
-  style={{ backgroundImage: `url(${heroBGImage})`, backgroundPosition: "center top" }} // move image lower
->
-  {/* Overlay to make text readable */}
-  <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        className="relative bg-cover bg-center py-32"
+        style={{
+          backgroundImage: `url(${heroBGImage})`,
+          backgroundPosition: "center top",
+        }} 
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center text-white">
-      <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-        Join the
-        <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          {" "}
-          Cohort{" "}
-        </span>
-      </h1>
-      <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-        Ready to transform your tech journey? Apply to join CSTC and connect with a community designed specifically for community college transfer students.
-      </p>
-      <div className="bg-green-100 border border-green-200 rounded-lg p-4 max-w-2xl mx-auto text-black">
-        <div className="flex items-center">
-          <CheckCircle className="text-green-600 mr-3 flex-shrink-0" size={20} />
-          <p className="text-green-800 text-sm">
-            <strong>Join Anytime:</strong> There are no deadlines or application windows. We use a simple, rolling admissions process to get you into the community as quickly as possible.
-          </p>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white">
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Join the
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                {" "}
+                Cohort{" "}
+              </span>
+            </h1>
+            <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+              Ready to transform your tech journey? Apply to join CSTC and
+              connect with a community designed specifically for community
+              college transfer students.
+            </p>
+            <div className="bg-green-100 border border-green-200 rounded-lg p-4 max-w-2xl mx-auto text-black">
+              <div className="flex items-center">
+                <CheckCircle
+                  className="text-green-600 mr-3 flex-shrink-0"
+                  size={20}
+                />
+                <p className="text-green-800 text-sm">
+                  <strong>Join Anytime:</strong> There are no deadlines or
+                  application windows. We use a simple, rolling admissions
+                  process to get you into the community as quickly as possible.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Application Process */}
       <section className="py-20 bg-white">
