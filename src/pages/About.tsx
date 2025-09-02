@@ -7,6 +7,7 @@ import inclusivityImage from "../assets/inclusivity.png";
 import empowermentImage from "../assets/empowerment.png";
 import communityImage from "../assets/community.png";
 import Leadership from "../components/Leadership";
+import Logo from "../components/Logo";
 
 function About() {
   return (
@@ -16,7 +17,7 @@ function About() {
         className="relative bg-cover bg-center py-20"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div data-aos="fade-up" data-aos-delay="0" className="absolute inset-0 bg-black bg-opacity-60"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
@@ -24,7 +25,7 @@ function About() {
               About
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 {" "}
-                CSTC{" "}
+                <Logo/>{" "}
               </span>
             </h1>
             <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -37,7 +38,7 @@ function About() {
 
       {/* Mission & Vision */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div  data-aos="fade-up" data-aos-delay="0" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             {/* Mission Text */}
             <div>
@@ -74,15 +75,34 @@ function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 parallax">
+        <div data-aos="fade-up" data-aos-delay="0" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
             <div className="bg-blue-100 border border-blue-200 rounded-lg p-6">
               <p className="text-blue-800 text-lg">
-                <strong>Note:</strong> This section is currently being
-                developed. Our founding story and journey will be shared here
-                soon.
+                <strong>Note:</strong> Lorem Ispum!
+              </p>
+                            <p className="text-blue-800 text-lg">
+                <strong>Note:</strong> Lorem Ispum!
+              </p>
+                            <p className="text-blue-800 text-lg">
+                <strong>Note:</strong> Lorem Ispum!
+              </p>
+                            <p className="text-blue-800 text-lg">
+                <strong>Note:</strong> Lorem Ispum!
+              </p>
+                            <p className="text-blue-800 text-lg">
+                <strong>Note:</strong> Lorem Ispum!
+              </p>
+                            <p className="text-blue-800 text-lg">
+                <strong>Note:</strong> Lorem Ispum!
+              </p>
+                            <p className="text-blue-800 text-lg">
+                <strong>Note:</strong> Lorem Ispum!
+              </p>
+                            <p className="text-blue-800 text-lg">
+                <strong>Note:</strong> Lorem Ispum!
               </p>
             </div>
           </div>
@@ -117,7 +137,7 @@ function About() {
               </p>
             </div> */}
 
-            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 relative">
+            <div data-aos="fade-up" data-aos-delay="0" className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100 relative">
               {/* Image with icon on top */}
               <div className="relative w-full h-80 mb-6">
                 <img
@@ -141,7 +161,7 @@ function About() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+            <div data-aos="fade-up" data-aos-delay="200" className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
               <div className="relative w-full h-80 mb-6">
                 <img
                   src={inclusivityImage}
@@ -163,7 +183,7 @@ function About() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+            <div data-aos="fade-up" data-aos-delay="400" className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
               <div className="relative w-full h-80 mb-6">
                 <img
                   src={empowermentImage}
@@ -184,7 +204,7 @@ function About() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+            <div data-aos="fade-up" data-aos-delay="600" className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
               <div className="relative w-full h-80 mb-6">
                 <img
                   src={communityImage}
@@ -210,9 +230,9 @@ function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+      <section className="py-20">
+        <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className=" text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Team</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Meet the dedicated individuals working to make CSTC a
@@ -250,13 +270,13 @@ function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/apply"
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
+              className="hover-card bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
             >
               Join the Cohort
             </a>
             <a
               href="/partners"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
+              className="hover-card border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
             >
               Become a Partner
             </a>

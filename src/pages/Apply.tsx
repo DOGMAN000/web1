@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { supabase, type Application } from "../lib/supabase";
 import heroBGImage from "../assets/applyHero.png";
-
+import Faq from "../components/Faq";
 function Apply() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<
@@ -351,7 +351,7 @@ function Apply() {
               </h3>
 
               <div className="space-y-6">
-                <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                <div data-aos="fade-up" data-aos-delay="0" className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
                   <div className="flex items-center mb-4">
                     <Clock className="text-blue-600 mr-3" size={24} />
                     <h4 className="text-lg font-semibold text-gray-900">
@@ -364,7 +364,7 @@ function Apply() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                <div data-aos="fade-up" data-aos-delay="200" className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
                   <div className="flex items-center mb-4">
                     <FileText className="text-purple-600 mr-3" size={24} />
                     <h4 className="text-lg font-semibold text-gray-900">
@@ -377,7 +377,7 @@ function Apply() {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                <div data-aos="fade-up" data-aos-delay="400" className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
                   <div className="flex items-center mb-4">
                     <Users className="text-green-600 mr-3" size={24} />
                     <h4 className="text-lg font-semibold text-gray-900">
@@ -398,46 +398,7 @@ function Apply() {
                 </h3>
 
                 <div className="space-y-4">
-                  <div className="bg-white rounded-lg shadow p-6">
-                    <h4 className="font-semibold text-gray-900 mb-2">
-                      Is there any cost?
-                    </h4>
-                    <p className="text-gray-600">
-                      No. CSTC is 100% free and always will be.
-                    </p>
-                  </div>
-
-                  <div className="bg-white rounded-lg shadow p-6">
-                    <h4 className="font-semibold text-gray-900 mb-2">
-                      What is the time commitment?
-                    </h4>
-                    <p className="text-gray-600">
-                      It's flexible. The more you put in, the more you get out.
-                      We recommend checking Slack a few times a week and
-                      attending at least one event per month.
-                    </p>
-                  </div>
-
-                  <div className="bg-white rounded-lg shadow p-6">
-                    <h4 className="font-semibold text-gray-900 mb-2">
-                      Do I need to be a programming genius to join?
-                    </h4>
-                    <p className="text-gray-600">
-                      Absolutely not. We look for passion, potential, and a
-                      collaborative spirit. All skill levels are welcome.
-                    </p>
-                  </div>
-
-                  <div className="bg-white rounded-lg shadow p-6">
-                    <h4 className="font-semibold text-gray-900 mb-2">
-                      How long does the application process take?
-                    </h4>
-                    <p className="text-gray-600">
-                      The application takes about 30-45 minutes to complete. We
-                      review applications on a rolling basis and typically
-                      respond within 1-2 weeks.
-                    </p>
-                  </div>
+                 <Faq/>
                 </div>
               </div>
             </div>
@@ -461,7 +422,7 @@ function Apply() {
                 .querySelector("form")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
+            className="hover-card bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
           >
             Apply Now
             <ArrowRight size={20} className="ml-2" />

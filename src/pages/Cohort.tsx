@@ -16,7 +16,7 @@ import communityImage from "../assets/cohortCommunity.png";
 import carrerImage from "../assets/carrerResources.png";
 import leadershipImage from "../assets/leadership.png";
 import whoImage from "../assets/whoShouldJoin.png";
-
+import Logo from "../components/Logo.tsx";
 function Cohort() {
   return (
     <div>
@@ -28,7 +28,7 @@ function Cohort() {
               The
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 {" "}
-                CSTC{" "}
+                <Logo/>{" "}
               </span>
               Cohort
             </h1>
@@ -37,10 +37,10 @@ function Cohort() {
               member. Join a community designed specifically for community
               college transfer students in computer science.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className=" flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/apply"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center group"
+                className="hover-card bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center group"
               >
                 Apply Now
                 <ArrowRight
@@ -54,7 +54,7 @@ function Cohort() {
                     .getElementById("benefits")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors text-center"
+                className="hover-card border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors text-center"
               >
                 Explore Benefits
               </button>
@@ -78,7 +78,7 @@ function Cohort() {
 
           <div className="space-y-16">
             {/* A Dedicated Community */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-up" data-aos-delay="200" className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center mb-6">
                   <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mr-4">
@@ -136,7 +136,7 @@ function Cohort() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-blue-50 rounded-2xl p-8 text-center">
+              <div data-aos="fade-up" data-aos-delay="400" className="bg-blue-50 rounded-2xl p-8 text-center">
                 <img
                   src={communityImage}
                   alt="Community"
@@ -161,7 +161,7 @@ function Cohort() {
             </div>
 
             {/* Career & Professional Development */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-up" data-aos-delay="400" className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="bg-purple-50 rounded-2xl p-8 order-2 lg:order-1 text-center">
                 <img
                   src={carrerImage}
@@ -188,7 +188,7 @@ function Cohort() {
                   </div>
                 </div>
               </div>
-              <div className="order-1 lg:order-2">
+              <div data-aos="fade-up" data-aos-delay="200" className="order-1 lg:order-2">
                 <div className="flex items-center mb-6">
                   <div className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center mr-4">
                     <Briefcase size={32} />
@@ -249,7 +249,7 @@ function Cohort() {
             </div>
 
             {/* Networking & Leadership */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-up" data-aos-delay="200" className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center mb-6">
                   <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mr-4">
@@ -307,7 +307,7 @@ function Cohort() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-green-50 rounded-2xl p-8 text-center">
+              <div data-aos="fade-up" data-aos-delay="400" className="bg-green-50 rounded-2xl p-8 text-center">
                 <img
                   src={leadershipImage}
                   alt="Leadership Impact"
@@ -361,7 +361,7 @@ function Cohort() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div data-aos="fade-up" data-aos-delay="0" className="bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <BookOpen size={32} />
               </div>
@@ -374,7 +374,7 @@ function Cohort() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div data-aos="fade-up" data-aos-delay="200" className="bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Award size={32} />
               </div>
@@ -387,7 +387,7 @@ function Cohort() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div data-aos="fade-up" data-aos-delay="400" className="bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Lightbulb size={32} />
               </div>

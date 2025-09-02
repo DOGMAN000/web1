@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hover-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.less-crazy-hover-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1),
+              0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+.less-crazy-hover-card:hover {
+  transform: scale(1.110);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1),
+              0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+.parallax {
+    background-image: url(https://computingtalentinitiative.org/wp-content/uploads/2019/12/people-working-with-computers-at-office-overlay.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
