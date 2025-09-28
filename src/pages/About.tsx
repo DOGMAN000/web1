@@ -6,6 +6,7 @@ import accessibilityImage from "../assets/accessibility.png";
 import inclusivityImage from "../assets/inclusivity.png";
 import empowermentImage from "../assets/empowerment.png";
 import communityImage from "../assets/community.png";
+import { Link } from "react-router-dom";
 import Leadership from "../components/Leadership";
 import Logo from "../components/Logo";
 
@@ -75,6 +76,53 @@ function About() {
       </section>
 
       {/* Our Story */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 flex items-center justify-center gap-2">
+              Our Story
+            </h2>
+          </div>
+
+          <p className="text-xl font-semibold text-gray-700 text-center max-w-3xl mx-auto mb-10">
+            The Computer Science Transfer Cohort (CSTC) was created by transfer
+            students, for transfer students.
+          </p>
+
+          <div className="text-left space-y-6 text-lg text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
+            <p>
+              We know firsthand how confusing and overwhelming community college
+              can be, especially when it comes to transferring into computer
+              science programs.
+            </p>
+            <p>
+              There are so many things no one tells you like hidden
+              requirements, opportunities, and pathways that can take hours of
+              research to figure out.
+            </p>
+            <p>
+              That’s why we started CSTC. Our mission is to give CS students the
+              launchpad we wish we had: a supportive community, clear guidance,
+              and resources to make transferring less stressful and more
+              achievable.
+            </p>
+          </div>
+
+          <div className="bg-blue-50 border-l-4 border-blue-400 rounded-md p-6 max-w-3xl mx-auto mb-10">
+            <p className="text-blue-900 text-lg italic text-center">
+              “We want every CS student to have a launchpad and not struggle the
+              way we did.”
+            </p>
+            <p className="text-blue-700 text-right mt-2">— Ricardo Escalante</p>
+          </div>
+
+          <div className="text-center">
+            <Link
+              to="/apply"
+              className="inline-block px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 transition"
+            >
+              Join CSTC
+            </Link>
       <section className="py-20 parallax">
         <div data-aos="fade-up" data-aos-delay="0" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -191,7 +239,7 @@ function About() {
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <div className="absolute bottom-2 left-2 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-md">
-                <Award size={32} />
+                  <Award size={32} />
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -212,7 +260,7 @@ function About() {
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <div className="absolute bottom-2 left-2 bg-orange-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-md">
-                <Award size={32} />
+                  <Award size={32} />
                 </div>
               </div>
 
@@ -239,8 +287,7 @@ function About() {
               transformative experience for every member.
             </p>
 
-              <Leadership></Leadership>
-
+            <Leadership></Leadership>
           </div>
 
           <div className="bg-blue-100 border border-blue-200 rounded-lg p-8 text-center">
