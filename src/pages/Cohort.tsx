@@ -39,6 +39,7 @@ function Cohort() {
             </p>
             <div className=" flex flex-col sm:flex-row gap-4 justify-center">
               <Link
+              onClick={() => window.scrollTo(0, 0)}
                 to="/apply"
                 className="hover-card bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center group"
               >
@@ -415,6 +416,7 @@ function Cohort() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
+            onClick={() => window.scrollTo(0, 0)}
               to="/apply"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
             >
@@ -422,6 +424,7 @@ function Cohort() {
               <ArrowRight size={20} className="ml-2" />
             </Link>
             <Link
+            onClick={() => window.scrollTo(0, 0)}
               to="/about"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
             >

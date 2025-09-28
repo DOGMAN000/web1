@@ -4,9 +4,9 @@ import dannyImg from "../assets/danny.png";
 import ricardoImg from "../assets/ricardo.png";
 
 const leadershipTeam = [
-  { delay: 100, img: "https://media.licdn.com/dms/image/v2/D4E03AQFLGp7aJ-_ArA/profile-displayphoto-crop_800_800/B4EZf3OM4CGcAU-/0/1752199385007?e=1759968000&v=beta&t=4Q8btIdkYxpBgIO4mENG1HwLBNyAdm-q8rGWyX5mAOw", name: "Kai N" , dummyText: "Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb "},
-  { delay: 300, img: "https://media.licdn.com/dms/image/v2/D4E03AQHcyNmlAm1BnQ/profile-displayphoto-shrink_400_400/B4EZYT9JffHYAg-/0/1744091519320?e=1759968000&v=beta&t=yksExMgSZfIiMIs9VF1z95B8FmPq7c3AgXImByhEwX0", name: "Danny A", dummyText: "Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb " },
-  { delay: 400, img: "https://media.licdn.com/dms/image/v2/D5603AQEMUaQev2BYuQ/profile-displayphoto-shrink_400_400/B56ZckdZcCGsAk-/0/1748663375912?e=1759968000&v=beta&t=te6dl82SthGas7GM2Hp6ZGBBLMqjeLdQOPyrkrDUPWM", name: "Ricardo E", dummyText: "Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb Lorem Ispum Blurb "},
+  { delay: 100, img: "https://media.licdn.com/dms/image/v2/D4E03AQFLGp7aJ-_ArA/profile-displayphoto-crop_800_800/B4EZf3OM4CGcAU-/0/1752199385007?e=1759968000&v=beta&t=4Q8btIdkYxpBgIO4mENG1HwLBNyAdm-q8rGWyX5mAOw", name: "Kai N" , dummyText: "Head of Operations"},
+  { delay: 300, img: "https://media.licdn.com/dms/image/v2/D4E03AQHcyNmlAm1BnQ/profile-displayphoto-shrink_400_400/B4EZYT9JffHYAg-/0/1744091519320?e=1759968000&v=beta&t=yksExMgSZfIiMIs9VF1z95B8FmPq7c3AgXImByhEwX0", name: "Danny A", dummyText: "Head of Engineering" },
+  { delay: 400, img: "https://media.licdn.com/dms/image/v2/D5603AQEsu0UAtoJk7A/profile-displayphoto-scale_200_200/B56ZlMY4zhI0AY-/0/1757923217315?e=1761782400&v=beta&t=pQJ6QAIv4uby5b3aEKQgCHITt0LLFw-YNLJRxLpyN48", name: "Ricardo E", dummyText: "Head of Logistics"},
 ];
 
 const Leadership = () => {
