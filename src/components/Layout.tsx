@@ -158,8 +158,8 @@ function Layout({ children }: LayoutProps) {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <ul className="space-y-2">
-                <li><a href="mailto:hello@cstc.org" className="text-gray-300 hover:text-white transition-colors">hello@cstc.org</a></li>
-                <li><a href="mailto:partner@cstc.org" className="text-gray-300 hover:text-white transition-colors">partner@cstc.org</a></li>
+                <li><a href="mailto:computersciencetransfercohort@gmail.com" className="text-gray-300 hover:text-white transition-colors">computersciencetransfercohort@gmail.com</a></li>
+                {/* <li><a href="mailto:partner@cstc.org" className="text-gray-300 hover:text-white transition-colors">partner@cstc.org</a></li> */}
                 <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Slack Community</a></li>
                 <li><a href="#" className="text-gray-300 hover:text-white transition-colors">LinkedIn</a></li>
               </ul>
