@@ -8,6 +8,7 @@ import empowermentImage from "../assets/empowerment.png";
 import communityImage from "../assets/community.png";
 import Leadership from "../components/Leadership";
 import Logo from "../components/Logo";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -17,7 +18,11 @@ function About() {
         className="relative bg-cover bg-center py-20"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div data-aos="fade-up" data-aos-delay="0" className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          className="absolute inset-0 bg-black bg-opacity-60"
+        ></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
@@ -25,7 +30,7 @@ function About() {
               About
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 {" "}
-                <Logo/>{" "}
+                <Logo />{" "}
               </span>
             </h1>
             <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -38,7 +43,11 @@ function About() {
 
       {/* Mission & Vision */}
       <section className="py-20 bg-white">
-        <div  data-aos="fade-up" data-aos-delay="0" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             {/* Mission Text */}
             <div>
@@ -76,34 +85,59 @@ function About() {
 
       {/* Our Story */}
       <section className="py-20 parallax">
-        <div data-aos="fade-up" data-aos-delay="0" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"
+        >
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
-            <div className="bg-blue-100 border border-blue-200 rounded-lg p-6">
-              <p className="text-blue-800 text-lg">
-                <strong>Note:</strong> Lorem Ispum!
+            <div className="text-center mb-12">
+              <h2 className="text-6xl font-bold text-white flex items-center justify-center gap-2">
+                Our Story
+              </h2>
+            </div>
+
+            <div className="bg-blue-50 border-l-4 border-blue-400 rounded-md p-6 max-w-3xl mx-auto mb-10">
+              <p className="text-xl font-semibold text-gray-700 text-center max-w-3xl mx-auto mb-10">
+                The Computer Science Transfer Cohort (CSTC) was created by
+                transfer students, for transfer students.
               </p>
-                            <p className="text-blue-800 text-lg">
-                <strong>Note:</strong> Lorem Ispum!
+
+              <div className="text-left space-y-6 text-lg text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
+                <p>
+                  We know firsthand how confusing and overwhelming community
+                  college can be, especially when it comes to transferring into
+                  computer science programs.
+                </p>
+                <p>
+                  There are so many things no one tells you like hidden
+                  requirements, opportunities, and pathways that can take hours
+                  of research to figure out.
+                </p>
+                <p>
+                  That’s why we started CSTC. Our mission is to give computer science students
+                  the launchpad we wish we had: a supportive community, clear
+                  guidance, and resources to make transferring less stressful
+                  and more achievable.
+                </p>
+              </div>
+
+              <p className="text-blue-900 text-lg italic text-center">
+                “We want every computer science student to have a launchpad and not struggle
+                the way we did.”
               </p>
-                            <p className="text-blue-800 text-lg">
-                <strong>Note:</strong> Lorem Ispum!
-              </p>
-                            <p className="text-blue-800 text-lg">
-                <strong>Note:</strong> Lorem Ispum!
-              </p>
-                            <p className="text-blue-800 text-lg">
-                <strong>Note:</strong> Lorem Ispum!
-              </p>
-                            <p className="text-blue-800 text-lg">
-                <strong>Note:</strong> Lorem Ispum!
-              </p>
-                            <p className="text-blue-800 text-lg">
-                <strong>Note:</strong> Lorem Ispum!
-              </p>
-                            <p className="text-blue-800 text-lg">
-                <strong>Note:</strong> Lorem Ispum!
-              </p>
+              <p className="text-blue-700 text-right mt-2">— Danny Abraham</p>
+
+            </div>
+
+            <div className="text-center">
+              <Link
+                to="/apply"
+                onClick={() => window.scrollTo(0, 0)}
+                className="hover-card inline-block px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 transition"
+              >
+                Join CSTC
+              </Link>
             </div>
           </div>
         </div>
@@ -123,21 +157,12 @@ function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
-              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <Shield size={32} />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Accessibility
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Our program is and always will be free. We believe that
-                financial barriers should never prevent talented students from
-                accessing opportunities.
-              </p>
-            </div> */}
 
-            <div data-aos="fade-up" data-aos-delay="0" className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100 relative">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="0"
+              className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100 relative"
+            >
               {/* Image with icon on top */}
               <div className="relative w-full h-80 mb-6">
                 <img
@@ -161,7 +186,11 @@ function About() {
               </p>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="200" className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100"
+            >
               <div className="relative w-full h-80 mb-6">
                 <img
                   src={inclusivityImage}
@@ -183,7 +212,11 @@ function About() {
               </p>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="400" className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="400"
+              className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100"
+            >
               <div className="relative w-full h-80 mb-6">
                 <img
                   src={empowermentImage}
@@ -191,7 +224,7 @@ function About() {
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <div className="absolute bottom-2 left-2 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-md">
-                <Award size={32} />
+                  <Award size={32} />
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -204,7 +237,11 @@ function About() {
               </p>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="600" className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="600"
+              className="hover-card bg-white rounded-xl shadow-lg p-8 border border-gray-100"
+            >
               <div className="relative w-full h-80 mb-6">
                 <img
                   src={communityImage}
@@ -212,7 +249,7 @@ function About() {
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <div className="absolute bottom-2 left-2 bg-orange-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-md">
-                <Award size={32} />
+                  <Award size={32} />
                 </div>
               </div>
 
@@ -239,21 +276,9 @@ function About() {
               transformative experience for every member.
             </p>
 
-              <Leadership></Leadership>
-
+            <Leadership></Leadership>
           </div>
 
-          <div className="bg-blue-100 border border-blue-200 rounded-lg p-8 text-center">
-            <Globe className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Team Profiles Coming Soon
-            </h3>
-            <p className="text-blue-800 text-lg">
-              We're currently preparing detailed profiles of our team leaders,
-              including their backgrounds, roles, and passion for supporting
-              transfer students. Check back soon to meet the people behind CSTC!
-            </p>
-          </div>
         </div>
       </section>
 

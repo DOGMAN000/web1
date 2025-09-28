@@ -34,6 +34,7 @@ function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
+              onClick={() => window.scrollTo(0, 0)}
                 to="/apply"
                 className="hover-card bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center group"
               >
@@ -172,6 +173,7 @@ function Home() {
 
           <div className="text-center mt-12">
             <Link
+            onClick={() => window.scrollTo(0, 0)}
               to="/apply"
               className="hover-card bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center"
             >
@@ -194,6 +196,7 @@ function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
+            onClick={() => window.scrollTo(0, 0)}
               to="/apply"
               className="hover-card bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
             >
@@ -201,6 +204,7 @@ function Home() {
               <ArrowRight size={20} className="ml-2" />
             </Link>
             <Link
+            onClick={() => window.scrollTo(0, 0)}
               to="/cohort"
               className="hover-card border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
             >

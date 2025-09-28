@@ -24,7 +24,7 @@ function Layout({ children }: LayoutProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Link to="/" className="flex-shrink-0">
+              <Link to="/" className="flex-shrink-0" onClick={() => window.scrollTo(0, 0)}>
                 <div className="less-crazy-hover-card bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold px-4 py-2 rounded-lg text-xl">
                   <Logo/>
                 </div>
@@ -34,13 +34,15 @@ function Layout({ children }: LayoutProps) {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 <Link 
+                  onClick={() => window.scrollTo(0, 0)}
                   to="/about" 
                   className={`font-medium transition-colors ${isActive('/about') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
                 >
                   About Us
                 </Link>
                 
-                <Link 
+                <Link
+                  onClick={() => window.scrollTo(0, 0)} 
                   to="/cohort" 
                   className={`font-medium transition-colors ${isActive('/cohort') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
                 >
@@ -48,12 +50,14 @@ function Layout({ children }: LayoutProps) {
                 </Link>
                 
                 <Link 
+                  onClick={() => window.scrollTo(0, 0)}
                   to="/partners" 
                   className={`font-medium transition-colors ${isActive('/partners') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
                 >
                   Partners
                 </Link>
-                <Link 
+                <Link
+                onClick={() => window.scrollTo(0, 0)} 
                   to="/apply" 
                   className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                 >
@@ -120,7 +124,7 @@ function Layout({ children }: LayoutProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <Link to="/" className="inline-block mb-4">
+              <Link to="/" className="inline-block mb-4" onClick={() => window.scrollTo(0, 0)}>
                 <div className="less-crazy-hover-card bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold px-4 py-2 rounded-lg text-xl">
                   <Logo/>
                 </div>
@@ -144,10 +148,10 @@ function Layout({ children }: LayoutProps) {
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><Link to="/cohort" className="text-gray-300 hover:text-white transition-colors">The Cohort</Link></li>
-                <li><Link to="/apply" className="text-gray-300 hover:text-white transition-colors">Apply Now</Link></li>
-                <li><Link to="/partners" className="text-gray-300 hover:text-white transition-colors">Partners</Link></li>
-                <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
+                <li><Link to="/cohort" className="text-gray-300 hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>The Cohort</Link></li>
+                <li><Link to="/apply" className="text-gray-300 hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Apply Now</Link></li>
+                <li><Link to="/partners" className="text-gray-300 hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Partners</Link></li>
+                <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>About Us</Link></li>
               </ul>
             </div>
             
