@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Mail, LinkedinIcon, TwitterIcon, InstagramIcon, ChevronDown } from 'lucide-react';
-
+import Logo from './Logo';
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -25,8 +25,8 @@ function Layout({ children }: LayoutProps) {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Link to="/" className="flex-shrink-0">
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold px-4 py-2 rounded-lg text-xl">
-                  CSTC
+                <div className="less-crazy-hover-card bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold px-4 py-2 rounded-lg text-xl">
+                  <Logo/>
                 </div>
               </Link>
             </div>
@@ -121,8 +121,8 @@ function Layout({ children }: LayoutProps) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <Link to="/" className="inline-block mb-4">
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold px-4 py-2 rounded-lg text-xl">
-                  CSTC
+                <div className="less-crazy-hover-card bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold px-4 py-2 rounded-lg text-xl">
+                  <Logo/>
                 </div>
               </Link>
               <p className="text-gray-300 mb-6 max-w-md">

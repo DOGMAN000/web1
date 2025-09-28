@@ -118,7 +118,7 @@ function Partners() {
                   placeholder="Enter your email"
                   className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                 />
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors">
+                <button className="less-crazy-hover-card bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors">
                   Notify Me
                 </button>
               </div>
@@ -174,7 +174,7 @@ function Partners() {
 
           {/* Why Partner With CSTC */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div data-aos="fade-up" data-aos-delay="0" className="hover-card bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users size={32} />
               </div>
@@ -188,7 +188,7 @@ function Partners() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div data-aos="fade-up" data-aos-delay="200" className="hover-card bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Award size={32} />
               </div>
@@ -202,7 +202,7 @@ function Partners() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div data-aos="fade-up" data-aos-delay="400" className="hover-card bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingUp size={32} />
               </div>
@@ -494,7 +494,7 @@ function Partners() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="hover-card w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>
@@ -612,7 +612,7 @@ function Partners() {
           </p>
           <a
             href="mailto:partner@cstc.org"
-            className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
+            className="hover-card bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
           >
             Start a Partnership
             <Mail size={20} className="ml-2" />

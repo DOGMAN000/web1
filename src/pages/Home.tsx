@@ -5,8 +5,6 @@ import {
   Rocket,
   Megaphone,
   ArrowRight,
-  CheckCircle,
-  Star,
 } from "lucide-react";
 import heroBGImage from "../assets/mainPageBG.png";
 
@@ -18,7 +16,7 @@ function Home() {
         className="relative bg-cover bg-center py-32"
         style={{ backgroundImage: `url(${heroBGImage})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+        <div data-aos="fade-up" data-aos-delay="0" className="hover-card absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
@@ -37,7 +35,7 @@ function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/apply"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center group"
+                className="hover-card bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center group"
               >
                 Join the Cohort Now
                 <ArrowRight
@@ -51,7 +49,7 @@ function Home() {
                     .getElementById("mission")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="border-2 border-gray-300 text-white px-8 py-4 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-100 transition-colors text-center"
+                className="hover-card border-2 border-gray-300 text-white px-8 py-4 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-100 transition-colors text-center"
               >
                 Learn More
               </button>
@@ -76,7 +74,7 @@ function Home() {
           </div>
 
           {/* Program Pillars */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          <div data-aos="fade-up" data-aos-delay="100" className="hover-card grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             <div className="text-center p-8 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors">
               <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users size={32} />
@@ -91,7 +89,7 @@ function Home() {
               </p>
             </div>
 
-            <div className="text-center p-8 rounded-xl bg-purple-50 hover:bg-purple-100 transition-colors">
+            <div data-aos="fade-up" data-aos-delay="300" className="hover-card text-center p-8 rounded-xl bg-purple-50 hover:bg-purple-100 transition-colors">
               <div className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Rocket size={32} />
               </div>
@@ -105,7 +103,7 @@ function Home() {
               </p>
             </div>
 
-            <div className="text-center p-8 rounded-xl bg-green-50 hover:bg-green-100 transition-colors">
+            <div data-aos="fade-up" data-aos-delay="500" className="hover-card text-center p-8 rounded-xl bg-green-50 hover:bg-green-100 transition-colors">
               <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Megaphone size={32} />
               </div>
@@ -136,7 +134,7 @@ function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
+            <div data-aos="fade-up" data-aos-delay="100" className="text-center">
               <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 1
               </div>
@@ -147,7 +145,7 @@ function Home() {
               </p>
             </div>
 
-            <div className="text-center">
+            <div data-aos="fade-up" data-aos-delay="300" className="text-center">
               <div className="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 2
               </div>
@@ -160,7 +158,7 @@ function Home() {
               </p>
             </div>
 
-            <div className="text-center">
+            <div data-aos="fade-up" data-aos-delay="500" className="text-center">
               <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 3
               </div>
@@ -175,7 +173,7 @@ function Home() {
           <div className="text-center mt-12">
             <Link
               to="/apply"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center"
+              className="hover-card bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center"
             >
               Start Your Application
               <ArrowRight size={20} className="ml-2" />
@@ -197,14 +195,14 @@ function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/apply"
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
+              className="hover-card bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
             >
               Join the Cohort Now
               <ArrowRight size={20} className="ml-2" />
             </Link>
             <Link
               to="/cohort"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
+              className="hover-card border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
             >
               Learn More About Benefits
             </Link>
